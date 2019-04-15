@@ -8,7 +8,7 @@
     npm install
 
 ## To run tests
-    node req.js rest
-    node req.js ext
+    node req.js mlsearch
+    node req.js jsearch
 
 Compare the elapsed time for both requests.
