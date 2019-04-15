@@ -1,0 +1,18 @@
+{
+  "database-name": "%%mlAppName%%-content",
+  "schema-database": "%%mlAppName%%-schemas",
+  "triggers-database": "%%mlAppName%%-triggers",
+
+  "triple-index": true,
+
+  "uri-lexicon": true,
+  "collection-lexicon": true,
+  "directory-creation": "manual",
+  "maintain-last-modified": false,
+
+  "stemmed-searches": "basic",
+  "word-searches": true,
+  "trailing-wildcard-searches": true
+
+
+}

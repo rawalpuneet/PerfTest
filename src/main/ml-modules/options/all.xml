@@ -1,0 +1,8 @@
+<options xmlns="http://marklogic.com/appservices/search">
+  <search-option>unfiltered</search-option>
+  <page-length>10</page-length>
+  <transform-results apply="raw" />
+  <return-query>1</return-query>
+  <return-results>true</return-results>
+  <return-metrics>false</return-metrics>
+</options>

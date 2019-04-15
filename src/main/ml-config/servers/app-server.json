@@ -1,0 +1,13 @@
+{
+  "server-name": "%%mlAppName%%",
+  "group-name": "Default",
+  "server-type": "http",
+  "root": "/",
+  "port": "%%mlRestPort%%",
+  "content-database": "%%mlAppName%%-content",
+  "modules-database": "%%mlAppName%%-modules",
+
+  "authentication": "digestbasic",
+  "log-errors": true,
+  "default-error-format": "compatible"
+}
