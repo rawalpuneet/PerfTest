@@ -3,7 +3,7 @@
     var search = process.argv[2];
 
 	console.time('simple search');
-	var pageLength = 10000
+	var pageLength = 50000
 	var port = '8065'
 	var host = 'localhost'
 
@@ -17,6 +17,7 @@
     } else {
         search = jsearch
     }
+    console.log("POST : " + search);
 
 	var options = {
 	    'url': encodeURI(search),
@@ -27,7 +28,7 @@
 	    }
 	};
 
-	var request = request.get(options, function(error, response, body){
+	var request = request.post(options, function(error, response, body){
 	    if (!error && response.statusCode == 200){
 	        //console.log('body : ' + body)
 			console.timeEnd('simple search');
