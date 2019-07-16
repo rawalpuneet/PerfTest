@@ -29,6 +29,7 @@ dependencies {
      */
     mlcp files("mlcp/conf")
     mlcp files("mlcp/lib")
+    //compile group: 'com.marklogic', name: 'marklogic-client-api', version: '4.2.0'
 
 }
 
@@ -39,4 +40,18 @@ task importData(type: com.marklogic.gradle.task.MlcpTask) {
     input_file_path = "data/telemetry/"
     input_file_type = "archive"
     copy_metadata = "false"
+}
+
+task importPubMed(type: com.marklogic.gradle.task.MlcpTask) {
+    classpath = configurations.mlcp
+    command = "IMPORT"
+    database = mlAppConfig.contentDatabaseName
+    input_file_path = "data/pubmed/pubmed19n0001.zip"
+    copy_metadata = "false"
+    input_compressed = "true"
+    input_file_type = "aggregates"
+    aggregate_record_element = "PubmedArticle"
+    output_uri_prefix = "/articles/"
+    generate_uri = "true"
+
 }

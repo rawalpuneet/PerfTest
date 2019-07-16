@@ -19,11 +19,11 @@ db.documents.query(
  // .calculate( qb.facet('collection', qb.collection()) ) 
 //  .calculate(qb.facet('RequestType'))
   .withOptions({search:['unfiltered'],  categories: ['content']}  )
-   .slice(0,50000)
+   .slice(0,10000)
 
 ).result().then( function(results) {
 	
-    //console.log(JSON.stringify(results, null, 2));
+    // console.log(JSON.stringify(results, null, 2));
     console.timeEnd('simple search');
   process.exit()	
 });

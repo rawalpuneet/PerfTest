@@ -12,7 +12,9 @@
 
   "stemmed-searches": "basic",
   "word-searches": true,
-  "trailing-wildcard-searches": true
+  "trailing-wildcard-searches": true,
 
-
+  "word-lexicon": [
+    "http://marklogic.com/collation/"
+  ]
 }

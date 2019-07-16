@@ -3,7 +3,7 @@
     var search = process.argv[2];
 
 	console.time('simple search');
-	var pageLength = 50000
+	var pageLength = 10000
 	var port = '8065'
 	var host = 'localhost'
 
